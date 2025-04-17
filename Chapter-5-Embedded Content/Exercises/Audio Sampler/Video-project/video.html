@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Centered Video with Poster</title>
+  <style>
+    /*  to remove default margin, padding, and set box-sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    html, body {
+      height: 100%;
+      background-color: #f5f5f5;              /* background color */
+      font-family: Arial, sans-serif;           /* Font style */
+    }
+
+    /* to center content horizontally and vertically in the body */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* --------------Video styling ----------*/
+    video {
+      max-width: 80%;                                                   /* Limits the video  */
+      max-height: 80%;                                                  /* Limits the video height  */
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);                           /* Adds shadow around the video */
+      border-radius: 8px;                                               /* Rounds the corners of the video */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video element with a poster image to use  preview, autoplay, loop, and muted properties -->
+  <video src="myvideo.mp4" poster="poster.jpg" loop autoplay muted controls>
+    
+
+</body>
+</html>

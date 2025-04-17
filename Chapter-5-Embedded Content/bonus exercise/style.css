@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Comic Sans MS, sans-serif;
+    background: #111133; /* dark background */
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  header {
+    background: #220044;
+    padding: 20px;
+    font-size: 2em;
+  }
+  
+  .soundboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .sound-button {
+    background: #333366;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .sound-button:hover {
+    background: #ffcc00;
+    color: black;
+  }
+  

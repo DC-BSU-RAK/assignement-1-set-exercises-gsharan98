@@ -1,0 +1,20 @@
+/* Reset default margins and set height */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Center the video container */
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Optional: Set a max width for the video */
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+  
