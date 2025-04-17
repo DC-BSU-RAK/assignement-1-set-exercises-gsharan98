@@ -1,0 +1,101 @@
+/* ---General  default Reset s --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f9; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* --- styling  Header ---- */
+  header {
+    background: #4a90e2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* ---  Styling Navigation Bar  ---- */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #2c3e50; 
+  }
+  
+  /* ------ Layout of the Main Content----*/
+  main {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap; 
+  }
+  
+  /* ---- Column Boxes ---- */
+  .column {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+  }
+  
+  /* -------- sub Headings  --------*/
+  .column h2 {
+    margin-bottom: 1rem;
+    color: #4a90e2;
+  }
+  
+  /* ---------List inside columns-------- */
+  .column ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .column li {
+    margin-bottom: 0.75rem;
+  }
+  
+  /*------ Styling the Button ----- */
+  button {
+    background: #4a90e2;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #357ab8; 
+  }
+  
+  /*-----  styling   Footer----- */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+  }
+  

@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* ---------------resetting default styles ---------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     height: 100vh;
   }
   
-  /* Calculator container */
+  /* ----------the Calculator container---------*/
   .calculator-container {
     background-color: #f1faee;
     color: #1d3557;
@@ -23,20 +23,22 @@ body {
     width: 100%;
   }
   
-  /* Title */
+  /*  -------the Title-------- */
   .calculator-container h1 {
     margin-bottom: 25px;
     font-size: 24px;
     color: #e63946;
   }
   
-  /* Labels and inputs */
+  /* ---------Labels------- */
   label {
     display: block;
     margin: 15px 0 5px;
     font-weight: bold;
   }
   
+  /* --------input ------- */
+
   input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -46,7 +48,7 @@ body {
     box-sizing: border-box;
   }
   
-  /* Button styling */
+  /*  --------styling Button------- */
   button#calculateBtn {
     margin-top: 20px;
     padding: 12px 20px;
@@ -63,7 +65,7 @@ body {
     background-color: #d62828;
   }
   
-  /* Total cost display */
+  /* ---------displaying the  Total cost------ */
   #totalCost {
     margin-top: 20px;
     font-size: 18px;
