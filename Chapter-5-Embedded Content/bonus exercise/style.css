@@ -1,38 +1,175 @@
-body {
+/* --- Resetting default margin padding and sizing ---- */
+* {
     margin: 0;
-    font-family: Comic Sans MS, sans-serif;
-    background: #111133; /* dark background */
-    color: #ffffff;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  header {
-    background: #220044;
-    padding: 20px;
-    font-size: 2em;
+  /* ------- Styling Body ------*/
+  body {
+    font-family: 'Trebuchet MS', sans-serif;                                 /* ------- font style ------*/
+    background: radial-gradient(circle, #2d003d, #000);                  /* ------- background ------*/
+    color: #f1f1f1;                                                        /* ------- Scolor------*/
+    padding: 2rem;                                                            /* ------- padding------*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;                                                      /* ------- aligning text in the center ------*/
+    min-height: 100vh;
   }
   
+  /* ---- the  Header -- */
+  header h1 {
+    font-size: 3.5rem;                                                         /* ------- font size of the header ------*/
+    color: #ff66ff;                                                          /* ------- color------*/
+    text-shadow: 2px 2px 12px #6600ff;                                       /* ------- shadow of the text------*/
+    margin-bottom: 2rem;
+  }
+  
+  /* ---- Main Layout =------ */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+  }
+  
+  /* ----Soundboard Section ----- */
   .soundboard {
+    flex: 1;
+    min-width: 600px;
+    text-align: center;                    
+  }
+  
+  #bank-title {
+    font-size: 2rem;
+    color: #ffccff;
+    margin-bottom: 1rem;
+  }
+  
+  .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+    gap: 1.2rem;
   }
   
-  .sound-button {
-    background: #333366;
-    border: 2px solid #ffffff;
-    padding: 20px;
+  .sample {
+    background-color: #330033;
+    border: 2px solid #9900cc;
+    padding: 1rem;
+    color: #ff99ff;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px #000;
+    box-shadow: 0 0 10px #ff00ff40;
+  }
+  
+  .sample small {
+    display: block;
+    font-size: 0.8rem;
+    color: #cc66ff;
+    margin-top: 0.3rem;
+  }
+  
+  .sample:hover {
+    background-color: #ff66cc;
+    color: #000;
+    border-color: #ffccff;
+    box-shadow: 0 0 20px #ff66cc;
+  }
+  
+  /* -------- Navigation Buttons --------*/
+  .nav-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .nav-buttons button {
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    padding: 0.8rem 1.2rem;
+    background-color: #ff66cc;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff66cc;
+    transition: 0.3s ease;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #cc00cc;
+    color: white;
+  }
+  
+  /*--------Text-to-Speech Sidebar--------*/
+  .tts {
+    width: 100%;
+    max-width: 350px;
+    background-color: rgba(40, 0, 50, 0.9);
+    padding: 1.5rem;
+    border: 2px dashed #cc00ff;
+    border-radius: 16px;
+    box-shadow: 0 0 10px #cc00ff50;
+  }
+  
+  #tts-input {
+    width: 100%;
+    height: 160px;
+    padding: 1rem;
+    background: #220022;
+    color: #ffccff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    box-shadow: inset 0 0 5px #cc00ff;
+  }
+  
+  #speak-btn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #cc00cc;
+    color: white;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 0 10px #cc00cc;
+    transition: all 0.3s ease;
   }
   
-  .sound-button:hover {
-    background: #ffcc00;
-    color: black;
+  #speak-btn:hover {
+    background-color: #ff66cc;
+    color: #000;
+  }
+  
+  /* -------- Responsive Tweaks -------- */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .soundboard {
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
   }
   

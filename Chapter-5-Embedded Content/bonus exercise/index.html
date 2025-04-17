@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alan Partridge Soundboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Alan Partridge Soundboard</h1>
+    <h1> Partridge Sound FX</h1>   <!-- header --> 
   </header>
 
   <main>
-    <section id="soundboard" class="soundboard">
-      <!-- Buttons go here -->
+    <!--  the Soundboard grid -->
+    <section class="soundboard">
+      <h2 id="bank-title">Classic Quotes</h2>
+      <div id="sample-grid" class="grid">
+        <!-- JavaScript inserts sound buttons here -->
+      </div>
+      <div class="nav-buttons">
+        <button id="prev-btn">&larr;</button>
+        <button id="next-btn">&rarr;</button>
+      </div>
     </section>
+
+    <!-- Text-to-Speech Column -->
+    <aside class="tts">
+      <h2>💬 Say It Like Alan</h2>
+      <textarea id="tts-input" placeholder="Type a quote..."></textarea>
+      <button id="speak-btn">Speak!</button>
+    </aside>
   </main>
 
   <script src="index.js"></script>
 </body>
 </html>
+
+
