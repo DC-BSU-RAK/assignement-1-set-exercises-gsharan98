@@ -21,7 +21,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
   
-  /* Title and subtitle */
+  /* Title and the  subtitle */
   h1 {
     font-size: 32px;
     color: #2c3e50;
@@ -32,14 +32,14 @@ body {
     color: #34495e;
   }
   
-  /* RGB Value display */
+  /*-----  Value RGB  display ----*/
   #rgbValue {
     font-size: 24px;
     font-weight: bold;
     margin: 20px 0;
   }
   
-  /* Color buttons layout */
+  /*-----  every Color buttons layout----- */
   .color-options {
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ body {
     margin-bottom: 20px;
   }
   
-  /* Each color option button */
+  /*---- color option button---- */
   .color-option {
     width: 100px;
     height: 100px;
@@ -57,19 +57,19 @@ body {
     transition: transform 0.2s;
   }
   
-  /* Hover effect */
+  /* --- applying Hover effect-- */
   .color-option:hover {
     transform: scale(1.1);
     outline: 3px solid #333;
   }
   
-  /* Score and lives display */
+  /* ---- total Score and lives display-------- */
   #score, #lives {
     font-size: 18px;
     margin: 10px 0;
   }
   
-  /* Replay button styles */
+  /* ----- styling Replay button ---- */
   #replayBtn {
     padding: 10px 20px;
     font-size: 16px;

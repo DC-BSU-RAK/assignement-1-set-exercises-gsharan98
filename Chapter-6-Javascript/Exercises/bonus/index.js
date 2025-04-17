@@ -9,7 +9,7 @@ let score = 0;
 let lives = 3;
 let correctColor = "";
 
-// Function to create a random RGB color
+//  using this Function to create a random RGB color
 function generateRandomColor() {
   const r = Math.floor(Math.random() * 256); // red 0-255
   const g = Math.floor(Math.random() * 256); // green 0-255
@@ -17,13 +17,13 @@ function generateRandomColor() {
   return `rgb(${r}, ${g}, ${b})`;
 }
 
-// Function to set up a round
+
 function setColorOptions() {
   // Generate the correct color and show it
   correctColor = generateRandomColor();
   rgbValue.textContent = correctColor.toUpperCase();
 
-  // Pick one of the buttons randomly to be the correct answer
+  // Picking only  one  button randomly to be the correct answer
   const correctIndex = Math.floor(Math.random() * colorOptions.length);
   colorOptions.forEach((button, index) => {
     if (index === correctIndex) {
@@ -34,7 +34,7 @@ function setColorOptions() {
   });
 }
 
-// Start first round
+// Starting of the  first round
 setColorOptions();
 
 // Add click listeners to each button
@@ -42,7 +42,7 @@ colorOptions.forEach((button) => {
   button.addEventListener("click", () => {
     const selectedColor = getComputedStyle(button).backgroundColor;
 
-    // Check if the selected color is correct
+    // Checking if the selected color is correct or not 
     if (selectedColor === correctColor) {
       score++;
       alert("✅ Correct!");
@@ -51,11 +51,11 @@ colorOptions.forEach((button) => {
       alert("❌ Incorrect!");
     }
 
-    // Update score/lives display
+    // Update scores and shows the remaining live
     scoreDisplay.textContent = `Score: ${score}`;
     livesDisplay.textContent = `Lives: ${lives}`;
 
-    // If game over
+    // If  the game is  over
     if (lives === 0) {
       alert(`Game Over! Your final score is ${score}`);
       replayBtn.style.display = "block";
@@ -72,5 +72,5 @@ replayBtn.addEventListener("click", () => {
   scoreDisplay.textContent = `Score: ${score}`;
   livesDisplay.textContent = `Lives: ${lives}`;
   replayBtn.style.display = "none";
-  setColorOptions(); // Restart game
+  setColorOptions(); // Restarts the  game
 });
