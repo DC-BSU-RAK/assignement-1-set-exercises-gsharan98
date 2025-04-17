@@ -1,72 +1,73 @@
-/* Basic reset and font styling */
+/* Reset some default styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
   
-  /* Center the calculator container */
+  /* Calculator container */
   .calculator-container {
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f1faee;
+    color: #1d3557;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     text-align: center;
+    max-width: 350px;
+    width: 100%;
   }
   
-  /* Style for headings */
+  /* Title */
   .calculator-container h1 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #e63946;
   }
   
-  /* Style for labels */
-  .calculator-container label {
+  /* Labels and inputs */
+  label {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    text-align: left;
+    margin: 15px 0 5px;
+    font-weight: bold;
   }
   
-  /* Style for input fields */
-  .calculator-container input[type="number"] {
+  input[type="number"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #a8dadc;
+    border-radius: 8px;
+    font-size: 16px;
     box-sizing: border-box;
-    transition: border-color 0.3s;
   }
   
-  /* Highlight input fields on focus */
-  .calculator-container input[type="number"]:focus {
-    border-color: #007BFF;
-    outline: none;
-  }
-  
-  /* Style for the calculate button */
-  #calculateBtn {
+  /* Button styling */
+  button#calculateBtn {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #ffffff;
+    padding: 12px 20px;
+    background-color: #e63946;
+    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
   }
   
-  /* Hover effect for the button */
-  #calculateBtn:hover {
-    background-color: #0056b3;
+  button#calculateBtn:hover {
+    background-color: #d62828;
   }
   
-  /* Style for the total cost paragraph */
+  /* Total cost display */
   #totalCost {
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: bold;
+    color: #1d3557;
   }
   
