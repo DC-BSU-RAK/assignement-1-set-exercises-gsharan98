@@ -1,0 +1,104 @@
+/* ------------- Fonts and other styles ------------- */
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a;
+    overflow: hidden; /* Prevents scroll */
+    height: 100vh; /* Viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  /* -------- Header -------- */
+  header {
+    background-color: #1b263b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* -------- Navigation -------- */
+  nav {
+    background-color: #415a77;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 14px;
+    display: block;
+    font-size: 0.9rem;
+  }
+  
+  /* -------- Main Content -------- */
+  main {
+    flex: 1;
+    display: flex;
+    padding: 10px 20px;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  /* Welcome Section */
+  section {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+  }
+  
+  /* Line Up Box */
+  .lineup-box {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    background-color: #1b263b;
+    max-width: 35%;
+  }
+  
+  .lineup-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+  }
+  
+  /* -------- Footer -------- */
+  footer {
+    background-color: #1b263b;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  
