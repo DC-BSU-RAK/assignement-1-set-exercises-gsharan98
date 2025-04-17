@@ -1,0 +1,117 @@
+/* ===== Base Styles ===== */
+body {
+    margin: 0;             /*removing default margin*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*font style*/
+    background-color: #000000;       /*background color*/
+    color: #eeeeee;                  /*text color*/
+    line-height: 1.6;                  /*height of the line*/
+}
+
+h1, h2 {
+    color: #ff1e1e;                  /*text color*/
+    letter-spacing: 1px;                /*spacing between text*/
+}
+
+ul {
+    list-style-type: square;              /* square bullet points*/
+    padding-left: 1.2rem;                /* Proper list indentation */
+}
+
+a {
+    color: #ff4c4c;                      /* text color */
+    text-decoration: none;                 /* no underline */
+}
+
+a:hover {
+    text-decoration: underline;           /* it underlines when you hover */
+}
+
+/* ----------------navigation bar----------------*/
+.navbar {
+    background-color: #111;                    /* background color */
+    border-bottom: 2px solid #ff1e1e;         /* border color */
+    padding: 1rem 0;                             /*vertival padding*/
+    position: sticky;                             /*positioning */
+    top: 0;                                             
+    z-index: 1000;
+    text-align: center;                           /*center text alignment*/
+}
+
+.navbar ul {                                      /*removing default padding and margin*/ 
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;                               /*a horizontal list*/    
+    margin: 0 15px;                                   /*space between lines*/
+}
+
+.navbar a {
+    color: #fff;                                  /*navigation link*/
+    font-weight: bold;                               /*bold font*/
+    transition: color 0.3s ease;                      /*transition*/
+}
+
+.navbar a:hover {
+    color: #ff1e1e;                             /*red color while hovering*/
+}
+
+/* --- Hero Header --*/
+.hero {
+    text-align: center;                                 /*center text alignment*/
+    padding: 3rem 1rem;                                 /*padding*/
+    background-color: #1a1a1a;                        /*background color*/
+    border-bottom: 3px solid #ff1e1e;                  /*color of the bottom of the border*/
+}
+
+.hero h1 {
+    font-size: 3rem;                                     /*font size*/
+    margin-bottom: 0.5rem;                               /*margin at the bottom*/
+    text-transform: uppercase;                            /*uppercasse transform*/
+}
+
+.tagline {
+    font-size: 1.2rem;                      /*font sizet*/
+    color: #bbbbbb;                       /*color of the font*/
+    font-style: italic;                     /*font style*/
+}
+
+/* ------Sections ------ */
+.section {
+    padding: 2rem;                           /*innered space*/
+    margin: 2rem auto;                       /*centered spacing*/
+    max-width: 800px;
+    background-color: #121212;
+    border-left: 5px solid #ff1e1e;
+    border-radius: 5px;
+}
+
+.alt {
+    background-color: #1e1e1e;
+    border-left-color: #ff4c4c;
+}
+
+/* -------- Button Link ---------- */
+.btn {
+    background-color: #ff1e1e;                   /*red button*/
+    color: #fff !important;                      /*color of the text*/
+    padding: 0.5rem 1rem;                           /*padding*/
+    border-radius: 4px;                       
+    font-weight: bold;
+    transition: background-color 0.3s ease;          /*smooth transition*/
+}
+
+.btn:hover {
+    background-color: #cc1a1a;             /*red hover color*/
+}
+
+/* ----- Footer ------- */
+.footer {
+    text-align: center;                      /*center text alignment*/
+    padding: 1rem;                           /*padding*/
+    background-color: #0d0d0d;             /*background color*/
+    border-top: 2px solid #ff1e1e;         /*color of the top of the border*/
+    font-size: 0.9rem;                       /*font size*/
+    color: #888;                           /*font color*/
+}

@@ -1,0 +1,122 @@
+/* ----------------  styling  Main page ------------*/
+body {
+    margin: 0;                          /* Removes the  default  spacing */
+    padding: 0;
+    background-color: #0c0c0c;        /*  background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     /* font style */
+    color: #f0f0f0;                   /*  text color */
+    line-height: 1.6;                   /*  spacing between lines */
+}
+
+
+a {
+    color: #ff3c3c;                    /*  red links */
+    text-decoration: none;               /* Removes the  default underlines */
+}
+
+/* -------Hover effect ------- */
+a:hover {
+    text-decoration: underline;          /* underline on hovering */
+}
+
+/* ---------Navigation bar ---------- */
+.navbar {
+    background-color: #1a1a1a;           /* background */
+    padding: 1em;                          /* padding around nav items */
+    text-align: center;                    /* Center  aligned navigation links */
+    border-bottom: 2px solid #ff3c3c;    /* Red bottom border  */
+}
+
+/* ------removing defaults-------- */
+.navbar ul {
+    list-style: none;                       /* Removing bullet points */
+    padding: 0;                             /* Removing the default padding */
+    margin: 0;                              /* Removeing default margin */
+}
+
+/* ----Horizontal navigation ---- */
+.navbar li {
+    display: inline;                        /* Display  all the links in a row */
+    margin: 0 15px;                         /* Space between the  navigation items */
+}
+
+/* ------styling Navigation link ------ */
+.navbar a {
+    font-weight: bold;                      /* Make links bold */
+    color: #ffffff;                       /* color */
+    transition: color 0.3s;                 /* Smooth transition */
+}
+
+/* -----Hovering------- */
+.navbar a:hover {
+    color: #ff3c3c;                       /* Turn red when hovered */
+}
+
+/*-------- Special button styling for important links -----*/
+.btn {
+    background-color: #ff3c3c;               /* background color  */
+    color: #ffffff !important;               /* white text */
+    padding: 0.5em 1em;                        /*  button size */
+    border-radius: 5px;                        /*  rounded corners */
+    margin-left: 10px;                         /* Space from other nav items */
+    transition: background-color 0.3s;         /* Smooth  transition */
+}
+
+/*  ------hover Button effect ----------*/
+.btn:hover {
+    background-color: #cc2f2f;                /* dark red on hovering */
+}
+
+/* -------Hero section ------ */
+.hero {
+    padding: 100px 20px;                         /*  vertical spacing */
+    text-align: center;                          /* Center aligned content */
+    background: linear-gradient(135deg, #1c1c1c, #000000); /*  background */
+}
+
+/* --------styling Main headline--------  */
+.hero h1 {
+    font-size: 4rem;                             /*large text */
+    margin-bottom: 20px;                         /* Space below heading */
+    color: #ff3c3c;                            /*  text color*/
+    text-shadow: 0 0 5px #ff3c3c;              /* Glowing effect */
+}
+
+/* -------Hero section paragraph-------- */
+.hero p {
+    font-size: 1.2rem;                          /*  larger text */
+    margin-bottom: 20px;                         /* Space below paragraph */
+}
+
+ /*  glich effectt */
+.glitch {
+    position: relative; 
+    color: #ff3c3c;                             /* Red text */
+    font-weight: bold;                            /* Bold text */
+    text-shadow: 2px 0 #0ff, -2px 0 #f0f;     /*  glitch effect */
+}
+
+/* -----------Content sections ----------- */
+.intro, .content {
+    padding: 40px 20px;                         /*  spacing */
+    max-width: 800px;                           /*  reading width */
+    margin: 0 auto;                             /* Center on page */
+}
+
+/*---------- Section headings ------*/
+.intro h2, .content h1 {
+    color: #ff3c3c;                           /* headings color */
+    font-size: 2rem;                              /* Large size */
+    margin-bottom: 20px;                         /* Space below heading */
+}
+
+
+ul {
+    padding-left: 20px;                           /* list indentation */
+}
+
+
+ul li {
+    margin-bottom: 10px;                         /* Space between items */
+}
+
