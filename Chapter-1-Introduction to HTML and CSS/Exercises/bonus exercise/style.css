@@ -1,4 +1,4 @@
-/* General Reset */
+ /* ----Base Styling-Reseting  every element to use border-box sizing and eliminate the default padding and margins----.*/
 * {
     margin: 0;
     padding: 0;
@@ -6,78 +6,78 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;      /*font*/
+    background-color: #121212;           /*background color*/ 
+    color: #e0e0e0;                      /*font color*/
+    line-height: 1.6;                      /*for readibility*/
+    padding: 20px;                         /*padding*/
 }
 
 header {
-    text-align: center;
-    background-color: #1c1c1c;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;                           /* aligning text in the center*/
+    background-color: #1c1c1c;                  /*background color*/
+    padding: 20px;                                /*padding*/
+    border-radius: 10px;                          /*fmaking rounded corner*/
+    margin-bottom: 40px;                          /*margins*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);  /*shadow of the box*/
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem;                   /*h1 font size and color */
     color: #f0f0f0;
 }
 
 h2, h3 {
-    color: #f0f0f0;
+    color: #f0f0f0;                        /*h2 and h3  text color*/
 }
 
 .content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    max-width: 1100px;                     /*setting max width*/
+    margin: 0 auto;                        /*magings*/
+    padding: 20px;                         /*padding*/
+} 
 
 .tag-section, .css-section {
-    margin-bottom: 30px;
-    background-color: #2c2c2c;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;                                   /* spacing between*/
+    background-color: #2c2c2c;                           /*background color*/
+    padding: 20px;                                         /*inner padding */
+    border-radius: 8px;                                    /* round corners*/
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);          /* shadow*/
 }
 
 .tag-section h3, .css-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #d1d1d1;
+    font-size: 1.5rem;                             /* font size*/
+    margin-bottom: 10px;                           /* marging*/
+    color: #d1d1d1;                              /* color*/
 }
 
 pre {
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-    font-size: 1rem;
-    color: #d1d1d1;
+    background-color: #333;                        /* background color*/
+    padding: 10px;                                   /* inner spacing*/
+    border-radius: 5px;                              /* rounded corners*/
+    overflow-x: auto;                                /*scroll*/
+    font-size: 1rem;                                 /*code size*/
+    color: #d1d1d1;                                /* color*/
 }
 
 code {
-    font-family: 'Courier New', monospace;
+    font-family: 'Courier New', monospace;          /*font style */
     color: #d1d1d1;
 }
 
 /* Styling for Code Examples */
 pre code {
-    display: block;
+    display: block;                                /*a full width code */
 }
 
 /* Link Styling */
 a {
-    color: #8f8f8f;
-    text-decoration: none;
+    color: #8f8f8f;                             /*color*/
+    text-decoration: none;                        /* no underline*/
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline;                    /*underline as you hover */
 }
 
 /* Borders & Spacing */
