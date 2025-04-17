@@ -1,0 +1,105 @@
+/* ----Base Styling-Reseting  every element to use border-box sizing and eliminate the default padding and margins----.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   /*-----------styling the main body-----------*/
+  body {
+    background-color: #ffe6f0;             /* background as Light strawberry pink color */
+    background-size: 150px;                  /* Any background pattern's size (not displayed in this portion)*/
+    font-family: 'Quicksand', sans-serif;    /* font style*/
+    padding: 30px;                           /* padding around the page*/
+    color: #5a2a44;                        /* Deep mauve as  text color  */
+    position: relative;                      /* Creates the z-index positioning context*/ 
+    z-index: 1;                              /* The base layer for the order of stacking
+  }
+  
+  /* --------- Main Content Container---------- */
+  .container {
+    max-width: 800px;                         /* maximum width size*/
+    margin: auto;                             /* horizontally centers the container*/
+    position: relative;                       /* establisheing positioning */
+    z-index: 2;                               /* Places content above body background*/
+  }
+  
+  /*--------- main Header Section---------- */
+  header {
+    text-align: center;   /*alignment of the text */
+    margin-bottom: 40px;  /*place above the header*/
+
+  }
+   /*----------heading---------------*/
+  h1 {
+    font-family: 'Pacifico', cursive;        /*font style for heading*/
+    font-size: 3em;                          /*large font style*/
+    color: #d81b60;                        /*pink color for the text*/
+    text-shadow: 1px 1px #ffffff;          /*white shadow of the text*/
+  } 
+  
+/*------------subtitle under main heading----------*/
+  .subtitle {
+    font-size: 1.2em;                          /*font size- bigger than the body text*/
+    color: #a94a76;                          /*color*/
+    margin-top: 5px;                           /* space above subtitle*/
+  }
+  
+  /* ------------ Card Styling --------- */
+  .card {
+    background: #ffffff;                               /* background color */
+    border-radius: 16px;                                 /* round corners */
+    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2);   /* shadow of the box*/
+    padding: 25px;                                       /* Inner spacing */
+    margin-bottom: 30px;                                 /* space between the cards */
+    transition: transform 0.2s ease-in-out;              /*when you hover on the box smooth.there will be hover animation*/
+  } 
+  /* -----------------hover effect---------------- */
+  .card:hover {
+    transform: scale(1.02);              /* enlarges the card when user hovers on it */
+  }
+  
+  /*------------- Section Headings ------------------*/
+  h2 {
+    color: #c2185b;                       /* color of heading  */
+    font-weight: 600;                       /* bold font weight */
+    margin-bottom: 15px;                    /* Space below heading */
+  }
+  
+  /*---------- List items including both ordered and unordered list------------ */
+  ul, ol {
+    padding-left: 20px;                     /*moving  the list items*/
+    line-height: 1.8;                       /*space between the lines*/
+  }
+   /* ----------------individual list items------------------*/
+  li {
+    font-size: 1.1em;                          /* size of the font */
+    margin-bottom: 10px;                       /* Space between items */
+  }
+  
+  /* -----------  Styling Tip Section ----------- */
+  .tip {
+    background-color: #ffeaf3;                  /* background color */
+    border-left: 6px solid #f06292;            /* accent border on the left side */
+  }
+  
+  /* -------------- Share Text ------------- */
+  .share-text {
+    text-align: center;                            /* aligning text in the center */
+    font-size: 1.1em;                              /* font size */
+    font-weight: 500;                              /* medium font weight */
+    color: #c2185b;                              /* color of the text */
+    margin-top: 30px;                              /* Space between element */
+  }
+  
+  /* ----------- styling Footer----------- */
+  .footer-text {
+    text-align: center;                              /* aligning text in the center */
+    margin-top: 40px;                                /* Space above footer */
+    font-size: 1.1em;                                /* font size */
+    font-family: 'Pacifico', cursive;                /* decorative text */
+    color: #c2185b;                                /* color */
+    opacity: 0.8;                                    /* slightly  trnasparently */
+  }
+  
+  
+  }
