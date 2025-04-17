@@ -1,0 +1,72 @@
+/* Basic reset and font styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center the calculator container */
+  .calculator-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style for headings */
+  .calculator-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for labels */
+  .calculator-container label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* Style for input fields */
+  .calculator-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  /* Highlight input fields on focus */
+  .calculator-container input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Style for the calculate button */
+  #calculateBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the button */
+  #calculateBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the total cost paragraph */
+  #totalCost {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  

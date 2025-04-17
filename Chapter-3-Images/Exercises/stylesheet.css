@@ -1,0 +1,84 @@
+/* Basic Page Styling */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #fff0f5;
+  text-align: center;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Title Heading */
+h1 {
+  color: #ff69b4;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Gallery Grid Layout: 3 Columns */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Card for each image */
+.image-card {
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 200px;
+  overflow: hidden;
+}
+
+/* Image Styling */
+.image-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Filters */
+
+/* Black & White */
+.image-card.blackwhite img {
+  filter: grayscale(100%);
+}
+
+/* Blue Tint */
+.image-card.blue img {
+  filter: hue-rotate(180deg) saturate(120%);
+}
+
+/* Vintage Effect */
+.image-card.vintage img {
+  filter: sepia(60%) contrast(90%) brightness(90%);
+}
+
+/* Description under each image */
+.desc {
+  font-size: 0.75rem;
+  color: #5c4b51;
+  margin-top: 4px;
+}
+
+/* Credit Text */
+.credit {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #c94c9d;
+}
+
+/* Credit Links */
+.credit a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
